@@ -28,26 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Hello = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Hello
             // 
-            this.Hello.Location = new System.Drawing.Point(287, 176);
+            resources.ApplyResources(this.Hello, "Hello");
             this.Hello.Name = "Hello";
-            this.Hello.Size = new System.Drawing.Size(75, 23);
-            this.Hello.TabIndex = 0;
-            this.Hello.Text = "Hello";
             this.Hello.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Hello);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.ResumeLayout(false);
 
         }
